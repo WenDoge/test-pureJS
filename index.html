@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Listing App</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/styles.css" type="text/css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-logo">
+					<a href="#" class="link"
+						><img
+							src="./src/assets/logo-social.png"
+							alt="logo"
+							class="header-logo__img"
+					/></a>
+					<a href="#" class="link"
+						><span class="header-logo__item">Some Company</span></a
+					>
+					<button class="cart" id="cart"></button>
+					<div class="inner-cart" id="inner-cart">
+						<div class="inner-header">
+							<h3 class="inner-header__item">Корзина Пуста :(</h3>
+						</div>
+						<button id="inner-button" class="button inner-button" disabled>
+							Перейти в корзину
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="product-listing-wrapper"></div>
+				<div class="order-window" id="order-window">
+					<div class="inner-header">
+						<h3 class="inner-header__item">Ваш заказ:</h3>
+					</div>
+					<form id="order-form" class="order-form">
+						<div class="form-footer" id="form-footer">
+							<input id='form-input' type="tel" placeholder="+7 999-444-55-44" required></input>
+							<label for='form-input'>Ваш телефон* :</label>
+							<button type='submit' class="button order-button">Отправить</button>
+						</div>
+						<div class="submit-notification">
+							<h3>Благодарим за заказ!</h3>
+							<span>В скором времени наш менеджер свяжется с Вами для уточнения заказа.</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<div class="dark-overlay"></div>
+		<script type="module" src="src/index.js"></script>
+	</body>
+</html>
